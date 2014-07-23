@@ -1,0 +1,287 @@
+
+@font-face {
+    font-family: 'SegoeUILight';
+    src: url('../fonts/segoeuil.eot');
+    src: url('../fonts/segoeuil.eot') format('embedded-opentype'),
+    url('../fonts/segoeuil.woff') format('woff'),
+    url('../fonts/segoeuil.ttf') format('truetype'),
+    url('../fonts/segoeuil.svg#SegoeUILight') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUIRegular';
+    src: url('../fonts/segoeui.eot');
+    src: url('../fonts/segoeui.eot') format('embedded-opentype'),
+    url('../fonts/segoeui.woff') format('woff'),
+    url('../fonts/segoeui.ttf') format('truetype'),
+    url('../fonts/segoeui.svg#SegoeUIRegular') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUISemilight';
+    src: url('../fonts/segoeuisl.eot');
+    src: url('../fonts/segoeuisl.eot') format('embedded-opentype'),
+    url('../fonts/segoeuisl.woff') format('woff'),
+    url('../fonts/segoeuisl.ttf') format('truetype'),
+    url('../fonts/segoeuisl.svg#SegoeUISemilight') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUISemibold';
+    src: url('../fonts/seguisb.eot');
+    src: url('../fonts/seguisb.eot') format('embedded-opentype'),
+    url('../fonts/seguisb.woff') format('woff'),
+    url('../fonts/seguisb.ttf') format('truetype'),
+    url('../fonts/seguisb.svg#SegoeUISemibold') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUIBold';
+    src: url('../fonts/segoeuib.eot');
+    src: url('../fonts/segoeuib.eot') format('embedded-opentype'),
+    url('../fonts/segoeuib.woff') format('woff'),
+    url('../fonts/segoeuib.ttf') format('truetype'),
+    url('../fonts/segoeuib.svg#SegoeUIBold') format('svg');
+}
+
+
+/* =Main Content
+--------------------------------------------------------------------------------------------------*/
+
+.coupons {
+    width: 100%;
+    float: right;
+}
+.coupons .coupon-block {
+    display: yes;
+}
+.coupons .accordion-group {
+    margin-bottom: 15px;
+    border: 1px solid #f4f2f2;
+}
+.coupons .accordion-inner {
+    padding: 15px 10px 20px 20px;
+    border: 0;
+    overflow: hidden;
+}
+.coupons .accordion-inner p {
+    line-height: 16px;
+    padding-bottom: 10px;
+    color: #1b0000;
+}
+.coupons .accordion-inner p span {
+    line-height: 15px;
+    font-size: 10px;
+}
+.coupons .accordion-inner p.step-head {
+    line-height: 12px;
+    font-size: 12px;
+    font-family: 'segoeuisemilight';
+}
+.coupons .accordion-inner a.accept, .coupons .accordion-inner a.deny {
+    line-height: 20px;
+    margin-right: 50px;
+    float: right;
+    font-size: 10px;
+    font-family: 'segoeuisemibold';
+    color: #cc4a00;
+}
+.coupons .accordion-inner a.accept {
+    margin-right: 25px;
+    padding-right: 27px;
+    color: #0072bb;
+    background: url(../img/accept.png) no-repeat 100% 0;
+}
+.coupons .accordion-heading {
+    padding: 23px 0 25px 22px;
+    position: relative;
+    overflow: hidden;
+    background: #f4f2f2;
+}
+.coupons .accordion-heading .accordion-toggle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.coupons .accordion-heading p {
+    line-height: 15px;
+    font-size: 13px;
+    font-family: 'segoeuibold';
+    color: #cc4a00;
+}
+.coupons .more {
+    margin-top: -10px;
+    float: right;
+    font-size: 10px;
+    font-family: 'segoeuisemilight';
+    color: #0072bb;
+    text-decoration: underline;
+}
+.coupons .more:hover, .coupons .more:focus {
+    text-decoration: none;
+}
+.coupons figure {
+    margin-right: 35px;
+    float: left;
+}
+.coupons figure img {
+    margin-bottom: 12px;
+    display: block;
+}
+.coupons figure .date {
+    float: right;
+    font-family: 'segoeuisemibold';
+    font-size: 10px;
+}
+.coupons .step {
+    display: none;
+}
+.coupons .step:first-child {
+    display: block;
+}
+.by-card form {
+    margin: 10px 0 25px;
+    overflow: hidden;
+}
+.by-card input[class^="input"] {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 7px 4px;
+    padding: 0 7px;
+    float: left;
+    border-color: #b2b2b2;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+    color: #8d8e8e;
+}
+.by-card input.error {
+    border-color: red;
+}
+.by-card input:first-child {
+    margin-left: 0;
+}
+.by-card input.input-medium {
+    width: 154px;
+}
+.by-card input.input-mini {
+    width: 44px;
+    padding: 0 4px;
+    font-size: 11px;
+}
+.by-card input.input-small {
+    width: 46px;
+    padding: 0 4px 0 18px;
+    font-size: 11px;
+    background: url(../img/calendar.png) no-repeat 5px 50%;
+}
+.by-card input.input-xlarge {
+    width: 286px;
+    margin: 0;
+}
+.by-card a.no-card {
+    color: #006b91;
+    text-decoration: underline;
+}
+.by-card a.no-card:hover, .by-card a.no-card:focus {
+    text-decoration: none;
+}
+.by-card a.deny, .sms a.deny {
+    margin-right: 12px !important;
+    padding-right: 27px;
+    background: url(../img/deny.png) no-repeat 100% 0;
+}
+.coupons .sms p strong {
+    font-weight: normal;
+    font-family: 'segoeuibold';
+    color: #0072bb;
+}
+.coupons .sms .sms-field {
+    width: 130px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 7px;
+    display: block;
+    border-color: #f4f2f2;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+/* tabs */
+.nav-tabs {
+    border: 0;
+}
+.nav-tabs > li {
+    margin-left: 12px;
+    padding: 25px 0 1px;
+    font-family: 'segoeuiregular';
+    font-size: 12px;
+    color: #000;
+}
+.nav-tabs > li:first-child {
+    margin-left: 0;
+}
+.nav-tabs > li.active {
+    background: url(../img/arrow.png) no-repeat 45% 0;
+}
+.nav-tabs > li > a {
+    line-height: 100%;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    font-family: 'segoeuiregular';
+    font-size: 12px;
+    color: #0072bb;
+    text-transform: uppercase;
+    background: none !important;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #000;
+}
+.accordion {
+    margin: 0;
+}
+
+/* =End Main Content
+--------------------------------------------------------------------------------------------------*/
+
+/* =Footer
+--------------------------------------------------------------------------------------------------*/
+footer {
+    margin-top: 5px;
+    padding: 20px 0;
+    border-top: 1px solid #dbdbdb;
+    overflow: hidden;
+}
+footer .go2service p {
+    font-size: 13px;
+}
+footer ul {
+    margin-bottom: 3px;
+    text-align: right;
+}
+footer ul li {
+    margin-right: 7px;
+    display: inline;
+    font-size: 13px;
+    color: #000;
+}
+footer ul li a {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.grey-line {
+    height: 70px;
+    background: #616161;
+}
+
+/* End Footer
+--------------------------------------------------------------------------------------------------*/
