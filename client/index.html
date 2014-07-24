@@ -21,12 +21,12 @@
     <link href="css/coupons.css" rel="stylesheet">
 
 
-    <script type="text/javascript">
-        function changeImage (imageSrc) {
-            document.getElementById("intro-header").background = imageSrc;
-            alert('test')
-        }
-    </script>
+    <!--<script type="text/javascript">-->
+        <!--function changeImage (imageSrc) {-->
+            <!--document.getElementById("intro-header").background = imageSrc;-->
+            <!--alert('test')-->
+        <!--}-->
+    <!--</script>-->
 
 </head>
 
@@ -47,7 +47,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="javascript:changeImage('../img/intro-bg.jpg')">Мы хотим переехать в новый офис</a>
+                    <li><a href="business-moving.html">Мы хотим переехать в новый офис</a>
                     </li>
                     <!--<li><a href="#services">Услуги</a>-->
                     <!--</li>-->
@@ -69,10 +69,10 @@
                     <div class="intro-message">
                         <h1>Я хочу переехать</h1>
                         <h2>в новую квартиру</h2>
-                        <hr class="intro-divider">
+                        <!--<hr class="intro-divider">-->
                         <h3>через</h3>
                         <ul class="list-inline intro-social-buttons">
-                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">2 месяца и больше</span></a>
+                            <li><a href="personal-moving.html" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">2 месяца и больше</span></a>
                             </li>
                             <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">6 недель</span></a>-->
                             <!--</li>-->
@@ -95,416 +95,22 @@
     </div>
     <!-- /.intro-header -->
 
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">За два месяца до переезда:
-                        <br></h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <p class="lead">
-                        <strong>Сортировка и избавление от ненужных вещей.</strong>
-                        <br>Пройдитесь по каждой комнате вашего дома и решите, что вы хотели бы сохранить и от чего
-                        могли бы избавиться. Подумайте о том, какие элементы будут нуждаться в специальной упаковке
-                        или дополнительном страховом покрытии.
-                        <br><a target="_blank" href="#">
-                            Узнать больше
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <div class="coupons">
-                        <div class="coupon-block">
-                            <div class="accordion" id="accordion2">
-                                <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#coupon21"></a>
-                                        <figure>
-                                            <img src="img/ikea.jpg" alt="" />
-                                            <span class="date">до 15.08.2013</span>
-                                        </figure>
-                                        <p>
-                                            Заплати 1 руб. сейчас,<br/>
-                                            сэкономь 999 руб.<br/>
-                                            при покупке в IKEA!
-                                        </p>
-                                    </div>
-                                    <div id="coupon21" class="accordion-body collapse">
-                                        <div class="accordion-inner">
-                                            <div class="step">
-                                                <p class="step-head">Шаг 1 из 2. Принятие условий акции</p>
-                                                <p><span>Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKE. Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKEA Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKEA</span></p>
-                                                <a href="#" class="deny">Не принимаю</a>
-                                                <a href="#" class="accept">Принимаю</a>
-                                            </div>
-                                            <div class="step">
-                                                <p class="step-head">Шаг 2 из 2.  Оплата</p>
-                                                <div class="by-card">
-                                                    <form action="#" method="post">
-                                                        <input type="text" class="input-medium" placeholder="Номер карты" />
-                                                        <input type="text" class="input-mini" placeholder="CVV/CID" />
-                                                        <input type="text" class="input-small" placeholder="1/12/2013" />
-                                                        <input type="text" class="input-xlarge" placeholder="Имя владельца" />
-                                                    </form>
-                                                    <a href="#" class="no-card">У меня нет карты</a>
-                                                    <a href="#" class="deny">Отменить</a>
-                                                    <a href="#" class="accept check">Оплатить</a>
-                                                </div>
-                                            </div>
-                                            <div class="step">
-                                                <p class="step-head"><strong>Оплата завершена!</strong></p>
-                                                <p>Спасибо вам за то, что воспользовались нашим сервисом. Теперь вы можете распечатать свой купон, или получить СМС-код, для того, чтобы воспользоваться нашей скидкой</p>
-                                                <a href="#" class="accept finish">Получить код</a>
-                                                <a href="#" class="accept finish">Распечатать купон</a>
-                                            </div>
-                                            <div class="step sms">
-                                                <p class="step-head">Шаг 2 из 2.  Оплата через SMS- сообщение</p>
-                                                <p>Отправьте SMS на короткий номер <strong>353</strong>, чтобы оплатить купон. В ответ вам будет выслано сообщение с кодом, который  вам нужно будет ввести в следующе поле:</p>
-                                                <input type="text" class="sms-field" />
-                                                <a href="#" class="deny">Отменить</a>
-                                                <a href="#" class="accept finish">Оплатить</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!--блок купонов-->
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <p class="lead">
-                    <strong>Изучение рынка услуг переезда.</strong>
-                    <br>Начните изучение мувинговых компаний. Не полагайтесь на расценки, сказанную по телефону; попросите оценку на  месте. Получите оценку стоимости переезда у каждой компании и убедитесь что у неё есть все необходимые разрешения.
-                    <br><a target="_blank" href="#">
-                        Узнать больше
-                    </a>
-                </p>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <div class="coupons">
-                        <div class="coupon-block">
-                            <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#coupon22"></a>
-                                        <figure>
-                                            <img src="img/miel.jpg" alt="" />
-                                            <span class="date">до 31.12.2014</span>
-                                        </figure>
-                                        <p>
-                                            Хотите арендовать квартиру?<br/>
-                                            Получите бесплатно<br/>
-                                            гарантийный сертификат<br/>
-                                            от miel.ru
-                                        </p>
-                                    </div>
-                                    <div id="coupon22" class="accordion-body collapse">
-                                        <div class="accordion-inner">
-                                            <div class="step">
-                                                <p class="step-head">Шаг 1 из 2. Принятие условий акции</p>
-                                                <p><span>Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKE. Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKEA Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKEA</span></p>
-                                                <a href="#" class="deny">Не принимаю</a>
-                                                <a href="#" class="accept">Принимаю</a>
-                                            </div>
-                                            <div class="step">
-                                                <p class="step-head">Шаг 2 из 2.  Оплата</p>
-                                                <div class="by-card">
-                                                    <form action="#" method="post">
-                                                        <input type="text" class="input-medium" placeholder="Номер карты" />
-                                                        <input type="text" class="input-mini" placeholder="CVV/CID" />
-                                                        <input type="text" class="input-small" placeholder="1/12/2013" />
-                                                        <input type="text" class="input-xlarge" placeholder="Имя владельца" />
-                                                    </form>
-                                                    <a href="#" class="no-card">У меня нет карты</a>
-                                                    <a href="#" class="deny">Отменить</a>
-                                                    <a href="#" class="accept check">Оплатить</a>
-                                                </div>
-                                            </div>
-                                            <div class="step">
-                                                <p class="step-head"><strong>Оплата завершена!</strong></p>
-                                                <p>Спасибо вам за то, что воспользовались нашим сервисом. Теперь вы можете распечатать свой купон, или получить СМС-код, для того, чтобы воспользоваться нашей скидкой</p>
-                                                <a href="#" class="accept finish">Получить код</a>
-                                                <a href="#" class="accept finish">Распечатать купон</a>
-                                            </div>
-                                            <div class="step sms">
-                                                <p class="step-head">Шаг 2 из 2.  Оплата через SMS- сообщение</p>
-                                                <p>Отправьте SMS на короткий номер <strong>353</strong>, чтобы оплатить купон. В ответ вам будет выслано сообщение с кодом, который  вам нужно будет ввести в следующе поле:</p>
-                                                <input type="text" class="sms-field" />
-                                                <a href="#" class="deny">Отменить</a>
-                                                <a href="#" class="accept finish">Оплатить</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Начните собирать информацию о переезде в одном месте.</strong>
-                    <br>Это можно сделать при помощи папки. Используйте её чтобы сохранить все счета, чеки, документы и список всех вещей, которые вы перевозите.
-                    <br><a target="_blank" href="#">
-                        Узнать больше
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Позаботьтесь о школьных документах.</strong>
-                    <br>Сходите в школу вашего ребенка и получите необходимые <a target="_blank" href="">для перевода в другую школу документы.
-                    </a>
-                </div>
-            </div>
-       
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Шесть недель до переезда:
-                        <br></h2>
-                    <p class="lead"><strong>Закажите упаковочные материалы.</strong>
-                   <br>Закажите коробки и другие упаковочные материалы, такие как липкую ленту, пузырчатую плёнку и перманентные маркеры. Не забудьте заказать специальные контейнеры, такие как упаковку для еды или гардеробные коробки для одежды.
-                    <br><p class="lead"><strong>Используйте всё, что не берёте с собой, или потеряете.</strong>
-                    <br>Начните использовать то, что вы не планируете перевозить, такие как замороженные или скоропортящиеся продукты и чистящие средства.</p>
-                    
-                    <br><p class="lead"><strong>Проведите замеры.</strong>
-                    <br>Замерьте размеры комнат в вашем доме и убедитесь, что наибольшие части мебели пройдут через дверь.</p>
-                    
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">За один месяц до переезда:
-                     <br></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <p class="lead"><strong>Выберите вашего мувера и подтвердите договорённости.</strong>
-                    <br>Выберите компанию и получите письменное подтверждение даты вашего переезда, цены и других деталей.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Маркировка коробок.</strong>
-                    <br>Пометьте и пронумеруйте все коробки. На ярлыках напишите содержимое коробки и комнату для которой
-                    она предназначена. Упакуйте и пометьте предметы первой необходимости.
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Начинайте паковаться.</strong>
-                    <br>Начните упаковывать вещи, которые вы используете реже всего, такие как вафельница и лыжи.
-                    Описывайте содержимое коробок на отдельных листах. Отмечайте вещи высокой стоимости, они могут
-                    потребовать дополнительного страхования от мувинговой компании. Вносите в транспортную опись вещи,
-                    которые стоят больше 5000 рублей, такие как компьютер.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Соберите ценные вещи.</strong>
-                    <br>Положите ценные вещи, такие как документы и драгоценности в специальную коробку (сумку и пр.),
-                    которую вы самостоятельно перевезёте в новый дом. Положите в неё договор с мувинговой компанией.
-                    Вам он понадобится в день переезда.
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Правильно смените адрес.</strong>
-                    <br>Сходите в почтовое отделение и заполните форму смены адреса. Но в случае если есть …,
-                    всегда мудро попросить близкого соседа присмотреть за почтовым ящиком после вашего переезда.
-                    Свяжитесь с ним через две недели после переезда и ещё раз через две недели после этого.
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Известите важные службы.</strong>
-                    <br>Предупредите о своем переезде банки, брокерские фирмы, отдел кадров вашего работодателя, журналы и
-                    газеты на которые вы подписаны, коммунальные, страховые и пр.
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <br><p class="lead"><strong>Станьте на учёт в новой поликлинике.</strong>
-                    <br>Приведите в порядок медицинские документы. Запросите передачу медицинской карты в новую поликлинику.</p>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">За две недели до переезда:
-                        <br></h2>
-                    <p class="lead"><strong>Возьмите отпуск на работе на день переезда.</strong>
-                    <br>Уведомите свой офис что вы переезжаете и вам нужен отгул. По Трудовому кодексу ???
-                    <br><p class="lead"><strong>Приведите в порядок машину.</strong><br>Отгоните свою машину в мастерскую и посоветуйтесь с механиком, какая профилактика или ремонт ей требуется.
-                    <br><p class="lead"><strong>Снимите все деньги со счетов.</strong><br>Если вы меняете банк, снимите деньги со своих счетов и положите их в ВАЖНУЮ коробку, которую вы возьмете с собой в день переезда.</p>
-                    <br><p class="lead"><strong>Свяжитесь с мувинговой компанией.</strong><br>Подтвердите соглашение. </p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">За одну неделю до переезда:
-                        <br></h2>
-                    <p class="lead"><strong>Позаботьтесь о рецептах на лекарства.</strong><br>Запаситесь рецептами на лекарства, которые вам понадобятся на несколько следующих недель.</p>
-                    <br><p class="lead"><strong>Соберите чемоданы.</strong><br>Завершите упаковку всех вещей за несколько дней до переезда. Затем упакуйте набор первой необходимости для каждого члена семьи с достаточным количеством одежды на первые несколько дней так, как будто вы едете в отпуск.</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">За несколько дней до переезда:
-                        <br></h2>
-                    <p class="lead"><strong>Разморозьте холодильник.</strong><br>Если вы перевозите холодильник, опустошите, почистите и разморозьте его как минимум за сутки до переезда</p>
-                    <br><p class="lead"><strong>Перепроверьте детали.</strong><br>Подтвердите время прибытия сотрудников мувинговой компании и уточните другие особенности. Убедитесь, что вы подготовили точные указания для персонала мувинговой компании о том, как добраться до вашего нового дома. Добавьте туда контактную информация, такую как номер мобильного телефона.</p>
-                    <br><p class="lead"><strong>Спланируйте оплату.</strong><br>Если вы ещё не распорядились заплатить муверу с кредитной карты, выполните денежный перевод или снимите наличные для оплаты и вознаграждения. Если персонал хорошо выполнил свою работу, от 10 до 15% итогового счёта станут отличным вознаграждением. Если ваш переезд был особенно тяжёлым для работников, приветствуется вознагражденеи какждого работника до 1000 руб.</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <!--<hr class="section-heading-spacer">-->
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">В день переезда:
-                        <br></h2>
-                    <p class="lead"><strong>Тотальный контроль.</strong><br>Убедитесь, что грузовик для переезда принадлежит компании, которую вы наняли. Государтсвенный регистрационный номер автотранспортного средства должен соответствовать тому, который указан в документах на переезд. Мошенничество в наше время не редкость.</p>
-                    <br><p class="lead"><strong>Проведите инвентаризацию.
-</strong><br>Перед тем, как муверы вас покинут, проверьте и подпишите счёт на доставку/инвентаризационный лист и сохраните копию у себя.</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Давайте познакомимся:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li><a href="https://facebook.com/anymoving" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                        <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
-                        <li><a href="#home">К началу страницы</a>
+                        <li><a href="#">ВКОНТАКТЕ</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#about">О проекте</a>
+                        <li><a href="https://www.facebook.com/pages/Anymoving/1476404779272658">FACEBOOK</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#services">Услуги</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#contact">Как с нами связаться</a>
+                        <li><a href="#services">LINKEDIN</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; VeryGood All 2014. All Rights Reserved</p>
+<!--                    <p class="copyright text-muted small">Copyright &copy; VeryGood All 2014. All Rights Reserved</p>-->
                 </div>
             </div>
         </div>
