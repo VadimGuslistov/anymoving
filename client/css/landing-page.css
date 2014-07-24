@@ -23,14 +23,14 @@ body, h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.intro-header:hover {
+/*.intro-header:hover {
     background: url(../img/business-moving-01.jpg) no-repeat center center;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    -moz-background-size: 100%; *//* Firefox 3.6+ *//*
+    -webkit-background-size: 100%; *//* Safari 3.1+ и Chrome 4.0+ *//*
+    -o-background-size: 100%; *//* Opera 9.6+ *//*
+    background-size: 100%; *//* Современные браузеры *//*
 
-}
+}*/
 
 .intro-message {
 	position: relative;
