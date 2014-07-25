@@ -73,7 +73,7 @@
                     <hr class="intro-divider">
                     <h3>через</h3>
                     <ul class="list-inline intro-social-buttons">
-                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">2 месяца и больше</span></a>
+                        <li><a href="personal-moving.html" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">2 месяца и больше</span></a>
                         </li>
                         <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">6 недель</span></a>-->
                         <!--</li>-->
@@ -100,41 +100,41 @@
 
 <div id="calendar"></div>
 
-<!--<div class="modal fade" id="events-modal">-->
-    <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-            <!--<div class="modal-header">-->
-                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-                <!--<h3>Event</h3>-->
-            <!--</div>-->
-            <!--<div class="modal-body" style="height: 400px">-->
-            <!--</div>-->
-            <!--<div class="modal-footer">-->
-                <!--<a href="#" data-dismiss="modal" class="btn">Close</a>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-<div class="modal fade" id="events-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="events-modal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Event</h4>
+                <h3>Event</h3>
             </div>
             <div class="modal-body" style="height: 400px">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <a href="#" data-dismiss="modal" class="btn">Close</a>
             </div>
         </div>
     </div>
 </div>
 
+<!--<div class="modal fade" id="events-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                <!--<h4 class="modal-title">Event</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body" style="height: 400px">-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 
-<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/underscore-min.js"></script>
 <script type="text/javascript" src="js/calendar.js"></script>
 <script type="text/javascript" src="js/language/ru-RU.js"></script>
@@ -147,55 +147,43 @@
 
     var calendar = $("#calendar").calendar(
         {
-            tmpl_path: "/tmpls/",
+            tmpl_path: "tmpls/",
             language: 'ru-RU',
-            events_source: function () {
-                return [
-                    {
-                        "id": 293,
-                        "title": "Начните присматривать новое жильё",
-                        "url": "http://example.com",
-                        "class": "event-info",
-                        modal: "#events-modal",
-                        modal_type : "ajax",
-                        modal_title : function (event) { return event.title },
-                        "start": dataFrom.getTime(), // Milliseconds
-                        "end": dataTo.getTime() // Milliseconds
-                    },
-                    {
-                        "id": 294,
-                        "title": "Начните присматривать новое жильё",
-                        "url": "http://example.com",
-                        "class": "event-warning",
-                        modal: "#events-modal",
-                        modal_type : "ajax",
-                        modal_title : function (event) { return event.title },
-                        "start": dataFrom.getTime(), // Milliseconds
-                        "end": dataTo.getTime() // Milliseconds
-                    },
+            events_source: [
+//                    {
+//                        "id": 293,
+//                        "title": "Начните присматривать новое жильё",
+//                        "url": "http://example.com",
+//                        "class": "event-info",
+//                        modal: "#events-modal",
+//                        modal_type : "ajax",
+//                        modal_title : function (event) { return event.title },
+//                        "start": dataFrom.getTime(), // Milliseconds
+//                        "end": dataTo.getTime() // Milliseconds
+//                    },
+//                    {
+//                        "id": 294,
+//                        "title": "Начните присматривать новое жильё",
+//                        "url": "http://example.com",
+//                        "class": "event-warning",
+//                        modal: "#events-modal",
+//                        modal_type : "ajax",
+//                        modal_title : function (event) { return event.title },
+//                        "start": dataFrom.getTime(), // Milliseconds
+//                        "end": dataTo.getTime() // Milliseconds
+//                    },
                     {
                         "id": 295,
                         "title": "Сортировка и избавление от ненужных вещей",
                         "url": "http://example.com",
                         "class": "event-important",
                         modal: "#events-modal",
-                        modal_type : "ajax",
-                        modal_title : function (event) { return event.title },
+                        modal_type : "iframe",
+                        modal_title : function (e) { return e.title },
                         "start": dataFrom.getTime(), // Milliseconds
                         "end": dataTo.getTime() // Milliseconds
                     }
-            ];
-//            events_source: [
-//                {
-//                    "id": 1,
-//                    "title": "Event 1",
-//                    "url": "http://example.com",
-//                    "class": "event-important",
-//                    "start": dataFrom, // Milliseconds
-//                    "end": dataTo // Milliseconds
-//                }
-//            ]
-            }
+            ]
         }
     );
 </script>
