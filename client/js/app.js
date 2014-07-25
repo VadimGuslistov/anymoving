@@ -2,6 +2,9 @@
 
 	"use strict";
 
+    var startDate = new Date();
+    var endDate = new Date();
+
 	var options = {
         first_day: 1,
         language: 'ru-RU',
@@ -22,7 +25,7 @@
 		view: 'month',
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
-		day: '2013-03-12',
+		day: '2014-07-25',
 		onAfterEventsLoad: function(events) {
 			if(!events) {
 				return;
