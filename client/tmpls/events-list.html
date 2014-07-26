@@ -22,7 +22,26 @@
                                data-event-class="<%= event['class'] %>" class="event-item">
                                 <strong><%= event.title %></strong>
                             </a>
-                            <br><%= event.description %></a>
+                            <!--<input type="checkbox" name="my-checkbox" checked>-->
+
+<!--                        <div class="btn-group" data-toggle="buttons-radio">
+                            <button name="includeicon" type="button" class="btn btn-default btn-success active" value="1"><i class="glyphicon glyphicon-ok"></i></button>
+                            <button name="includeicon" type="button" class="btn btn-default" value="0"><i class="glyphicon glyphicon-remove"></i></button>
+                        </div>
+
+                        <div class="btn-group" data-toggle="buttons-radio">
+                            <button name="includeicon" type="button" class="btn btn-default" value="1"><i class="glyphicon glyphicon-ok"></i></button>
+                            <button name="includeicon" type="button" class="btn btn-default btn-danger active" value="0"><i class="glyphicon glyphicon-remove"></i></button>
+                        </div>-->
+
+                            <br><a><%= event.description %></a>
+
+                            <!-- Индикатор выполнения -->
+                            <div class="btn-group" data-toggle="buttons-radio">
+                                <button name="state" type="button" class="btn btn-default btn-xs" value="">Выполнено</button>
+                                <button name="state" type="button" class="btn btn-default btn-xs btn-success active" value="active">В процессе</button>
+                                <button name="state" type="button" class="btn btn-default btn-xs" value="disabled">Не пригодилось</button>
+                            </div>
                         </p>
                     </div>
                     <div class="col-lg-5 col-sm-6">

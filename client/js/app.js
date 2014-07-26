@@ -2,10 +2,17 @@
 
 	"use strict";
 
-    var startDate = new Date();
-    var endDate = new Date();
+//    var startDate = new Date();
+//    startDate = startDate.getTime();
+//    var endDate = new Date();
+//    endDate = endDate.getTime();
+//
+//    var dateNow = new Date();
+//    var actualDate = ( dateNow.getYear() < 10 ? '0' + dateNow.getYear() : dateNow.getYear() )
+//        + '-' + ( dateNow.getMonth() < 10 ? '0' + dateNow.getMonth() : dateNow.getMonth() )
+//        + '-' + ( dateNow.getDay() < 10 ? '0' + dateNow.getDay() : dateNow.getDay() );
 
-	var options = {
+    var options = {
         first_day: 1,
         language: 'ru-RU',
         events_source: 'json/events.json',
@@ -25,7 +32,7 @@
 		view: 'month',
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
-		day: '2014-07-25',
+		day: 'now',
 		onAfterEventsLoad: function(events) {
 			if(!events) {
 				return;
@@ -51,7 +58,7 @@
 		}
 	};
 
-	var calendar = $('#calendar').calendar(options);
+    var calendar = $('#calendar').calendar(options);
 
 	$('.btn-group button[data-calendar-nav]').each(function() {
 		var $this = $(this);
@@ -67,8 +74,6 @@
 		});
 	});
 
-
-
 	$('#events-in-modal').change(function(){
 		var val = $(this).is(':checked') ? $(this).val() : null;
 		calendar.setOptions({modal: val});
@@ -77,4 +82,8 @@
 		//e.preventDefault();
 		//e.stopPropagation();
 	});
+
+    // Checkbox
+//    $("[name='my-checkbox']").bootstrapSwitch();
+
 }(jQuery));
