@@ -32,7 +32,7 @@
         view: 'month',
         tmpl_path: 'tmpls/',
         tmpl_cache: false,
-        day: 'now',
+        day: '2014-08-01',
         onAfterEventsLoad: function(events) {
             if(!events) {
                 return;
