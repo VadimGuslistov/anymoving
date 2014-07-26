@@ -11,23 +11,24 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/calendar.css">
 
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Add custom CSS here -->
-    <link href="css/personal-moving.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
     <link href="css/coupons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
 
 
-    <!--<script type="text/javascript">-->
-        <!--function changeImage (imageSrc) {-->
-            <!--document.getElementById("intro-header").background = imageSrc;-->
-            <!--alert('test')-->
-        <!--}-->
-    <!--</script>-->
+    <script type="text/javascript">
+        function changeImage (imageSrc) {
+            document.getElementById("intro-header").background = imageSrc;
+            alert('test')
+        }
+    </script>
 
 </head>
 
@@ -42,16 +43,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://anymoving.azurewebsites.net">anymoving</a>
+            <a class="navbar-brand" href="index.html">anymoving</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#services">План успешного переезда</a>
-                </li>
-                <li><a href="#services">Другие услуги</a>
-                </li>
+                <!--<li><a href="http://anymoving.azurewebsites.net/business-moving.html">Мы хотим переехать в новый офис</a>-->
+                <!--</li>-->
+                <!--<li><a href="#services">Услуги</a>-->
+                <!--</li>-->
                 <!--<li><a href="#contact">Контакты</a>-->
                 <!--</li>-->
             </ul>
@@ -68,6 +69,25 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
+                    <h1>Я хочу переехать</h1>
+                    <h2>в новую квартиру</h2>
+                    <!--<hr class="intro-divider">-->
+                    <h3>через</h3>
+                    <ul class="list-inline intro-social-buttons">
+                        <li><a href="personal-moving-2m.html" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">2 месяца или позже</span></a>
+                        </li>
+                        <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">6 недель</span></a>-->
+                        <!--</li>-->
+                        <li><a href="personal-moving-1m.html" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">месяц</span></a>
+                        </li>
+                        <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">2 недели</span></a>-->
+                        <li><a href="personal-moving-1w.html" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">неделю или раньше</span></a>
+                        </li>
+                        <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">неделю</span></a>-->
+                        <!--</li>-->
+                        <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">сегодня-завтра</span></a>-->
+                        <!--</li>-->
+                    </ul>
                 </div>
             </div>
         </div>
@@ -78,103 +98,121 @@
 </div>
 <!-- /.intro-header -->
 
+<div class="content-section-a">
 
-
-<div id="calendar"></div>
-
-
-<div class="modal fade" id="events-modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Event</h3>
-            </div>
-            <div class="modal-body" style="height: 400px">
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/underscore.js"></script>
-<script type="text/javascript" src="js/calendar.js"></script>
-<script type="text/javascript" src="js/language/ru-RU.js"></script>
-
-<!--<script type="text/javascript">
-
-
-    var dataFrom = new Date();
-    var dataTo = new Date();
-
-    var calendar = $("#calendar").calendar(
-        {
-            tmpl_path: "tmpls/",
-            language: 'ru-RU',
-            events_source: [
-//                    {
-//                        "id": 293,
-//                        "title": "Начните присматривать новое жильё",
-//                        "url": "http://example.com",
-//                        "class": "event-info",
-//                        modal: "#events-modal",
-//                        modal_type : "ajax",
-//                        modal_title : function (event) { return event.title },
-//                        "start": dataFrom.getTime(), // Milliseconds
-//                        "end": dataTo.getTime() // Milliseconds
-//                    },
-//                    {
-//                        "id": 294,
-//                        "title": "Начните присматривать новое жильё",
-//                        "url": "http://example.com",
-//                        "class": "event-warning",
-//                        modal: "#events-modal",
-//                        modal_type : "ajax",
-//                        modal_title : function (event) { return event.title },
-//                        "start": dataFrom.getTime(), // Milliseconds
-//                        "end": dataTo.getTime() // Milliseconds
-//                    },
-                    {
-                        "id": 295,
-                        "title": "Сортировка и избавление от ненужных вещей",
-                        "url": "http://example.com",
-                        "class": "event-important",
-                        modal: "#events-modal",
-                        modal_type : "iframe",
-                        modal_title : function (e) { return e.title },
-                        "start": dataFrom.getTime(), // Milliseconds
-                        "end": dataTo.getTime() // Milliseconds
-                    }
-            ]
-        }
-    );
-</script>-->
-
-
-
-<footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <ul class="list-inline">
-                    <li><a href="#">ВКОНТАКТЕ</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li><a href="https://www.facebook.com/pages/Anymoving/1476404779272658">FACEBOOK</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li><a href="#">LINKEDIN</a>
-                    </li>
-                </ul>
-                <!--                    <p class="copyright text-muted small">Copyright &copy; VeryGood All 2014. All Rights Reserved</p>-->
-            </div>
+            <h2 class="section-heading">Ваш персональный план успешного переезда:</h2>
+            <div id="calendar"></div>
         </div>
     </div>
-</footer>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+
+    <div class="container">
+
+        <div class="row">
+            <h2 class="section-heading">После переезда:</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <!--<hr class="section-heading-spacer">-->
+                <div class="clearfix"></div>
+                <!--<h2 class="section-heading">После переезда:-->
+                    <br></h2>
+                <p class="lead"><strong>Изучите специальные предложения.</strong><br>Наши партнёры предлагают специальные условия</p>
+            </div>
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <div class="coupons">
+                    <div class="coupon-block">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#coupon21"></a>
+                                    <figure>
+                                        <img src="img/ikea.jpg" alt="" />
+                                        <span class="date">до 15.08.2013</span>
+                                    </figure>
+                                    <p>
+                                        Заплати 1 руб. сейчас,<br/>
+                                        сэкономь 999 руб.<br/>
+                                        при покупке в IKEA!
+                                    </p>
+                                </div>
+                                <div id="coupon21" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        <div class="step">
+                                            <p class="step-head">Шаг 1 из 2. Принятие условий акции</p>
+                                            <p><span>Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKE. Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKEA Заплати 1 руб. сейчас, сэкономь 999 руб. при покупке в IKEA</span></p>
+                                            <a href="#" class="deny">Не принимаю</a>
+                                            <a href="#" class="accept">Принимаю</a>
+                                        </div>
+                                        <div class="step">
+                                            <p class="step-head">Шаг 2 из 2.  Оплата</p>
+                                            <div class="by-card">
+                                                <form action="#" method="post">
+                                                    <input type="text" class="input-medium" placeholder="Номер карты" />
+                                                    <input type="text" class="input-mini" placeholder="CVV/CID" />
+                                                    <input type="text" class="input-small" placeholder="1/12/2013" />
+                                                    <input type="text" class="input-xlarge" placeholder="Имя владельца" />
+                                                </form>
+                                                <a href="#" class="no-card">У меня нет карты</a>
+                                                <a href="#" class="deny">Отменить</a>
+                                                <a href="#" class="accept check">Оплатить</a>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <p class="step-head"><strong>Оплата завершена!</strong></p>
+                                            <p>Спасибо вам за то, что воспользовались нашим сервисом. Теперь вы можете распечатать свой купон, или получить СМС-код, для того, чтобы воспользоваться нашей скидкой</p>
+                                            <a href="#" class="accept finish">Получить код</a>
+                                            <a href="#" class="accept finish">Распечатать купон</a>
+                                        </div>
+                                        <div class="step sms">
+                                            <p class="step-head">Шаг 2 из 2.  Оплата через SMS- сообщение</p>
+                                            <p>Отправьте SMS на короткий номер <strong>353</strong>, чтобы оплатить купон. В ответ вам будет выслано сообщение с кодом, который  вам нужно будет ввести в следующе поле:</p>
+                                            <input type="text" class="sms-field" />
+                                            <a href="#" class="deny">Отменить</a>
+                                            <a href="#" class="accept finish">Оплатить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--блок купонов-->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="#">ВКОНТАКТЕ</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="https://www.facebook.com/pages/Anymoving/1476404779272658">FACEBOOK</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#services">LINKEDIN</a>
+                        </li>
+                    </ul>
+<!--                    <p class="copyright text-muted small">Copyright &copy; VeryGood All 2014. All Rights Reserved</p>-->
+                </div>
+            </div>
+        </div>
+    </footer>
 
 <!-- JavaScript -->
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -196,13 +234,13 @@
 <script type="text/javascript" src="js/language/cs-CZ.js"></script>
 <script type="text/javascript" src="js/language/ko-KR.js"></script>
 <script type="text/javascript" src="js/calendar.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
 
 <!-- Custom JavaScript -->
 <script src="js/mousewheel.js"></script>
 <script src="js/jscrollpane.js"></script>
 <script src="js/coupons.js"></script>
-
+<script src="js/bootstrap-switch.js"></script>
+<script type="text/javascript" src="js/personal-moving-1m.js"></script>
 
 </body>
 

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anymoving - лучший инструмент лёгкого переезда</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calendar.css">
+
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/personal-moving.css" rel="stylesheet">
+    <link href="css/coupons.css" rel="stylesheet">
+
+
+    <!--<script type="text/javascript">-->
+        <!--function changeImage (imageSrc) {-->
+            <!--document.getElementById("intro-header").background = imageSrc;-->
+            <!--alert('test')-->
+        <!--}-->
+    <!--</script>-->
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://anymoving.azurewebsites.net">anymoving</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#services">План успешного переезда</a>
+                </li>
+                <li><a href="#services">Другие услуги</a>
+                </li>
+                <!--<li><a href="#contact">Контакты</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="intro-header">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.intro-header -->
+
+
+
+<div id="calendar"></div>
+
+
+<div class="modal fade" id="events-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Event</h3>
+            </div>
+            <div class="modal-body" style="height: 400px">
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<script type="text/javascript" src="js/language/ru-RU.js"></script>
+
+<!--<script type="text/javascript">
+
+
+    var dataFrom = new Date();
+    var dataTo = new Date();
+
+    var calendar = $("#calendar").calendar(
+        {
+            tmpl_path: "tmpls/",
+            language: 'ru-RU',
+            events_source: [
+//                    {
+//                        "id": 293,
+//                        "title": "Начните присматривать новое жильё",
+//                        "url": "http://example.com",
+//                        "class": "event-info",
+//                        modal: "#events-modal",
+//                        modal_type : "ajax",
+//                        modal_title : function (event) { return event.title },
+//                        "start": dataFrom.getTime(), // Milliseconds
+//                        "end": dataTo.getTime() // Milliseconds
+//                    },
+//                    {
+//                        "id": 294,
+//                        "title": "Начните присматривать новое жильё",
+//                        "url": "http://example.com",
+//                        "class": "event-warning",
+//                        modal: "#events-modal",
+//                        modal_type : "ajax",
+//                        modal_title : function (event) { return event.title },
+//                        "start": dataFrom.getTime(), // Milliseconds
+//                        "end": dataTo.getTime() // Milliseconds
+//                    },
+                    {
+                        "id": 295,
+                        "title": "Сортировка и избавление от ненужных вещей",
+                        "url": "http://example.com",
+                        "class": "event-important",
+                        modal: "#events-modal",
+                        modal_type : "iframe",
+                        modal_title : function (e) { return e.title },
+                        "start": dataFrom.getTime(), // Milliseconds
+                        "end": dataTo.getTime() // Milliseconds
+                    }
+            ]
+        }
+    );
+</script>-->
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li><a href="#">ВКОНТАКТЕ</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li><a href="https://www.facebook.com/pages/Anymoving/1476404779272658">FACEBOOK</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li><a href="#">LINKEDIN</a>
+                    </li>
+                </ul>
+                <!--                    <p class="copyright text-muted small">Copyright &copy; VeryGood All 2014. All Rights Reserved</p>-->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jstz.js"></script>
+<script type="text/javascript" src="js/language/nl-NL.js"></script>
+<script type="text/javascript" src="js/language/fr-FR.js"></script>
+<script type="text/javascript" src="js/language/de-DE.js"></script>
+<script type="text/javascript" src="js/language/el-GR.js"></script>
+<script type="text/javascript" src="js/language/it-IT.js"></script>
+<script type="text/javascript" src="js/language/pl-PL.js"></script>
+<script type="text/javascript" src="js/language/pt-BR.js"></script>
+<script type="text/javascript" src="js/language/ro-RO.js"></script>
+<script type="text/javascript" src="js/language/es-MX.js"></script>
+<script type="text/javascript" src="js/language/es-ES.js"></script>
+<script type="text/javascript" src="js/language/ru-RU.js"></script>
+<script type="text/javascript" src="js/language/sv-SE.js"></script>
+<script type="text/javascript" src="js/language/cs-CZ.js"></script>
+<script type="text/javascript" src="js/language/ko-KR.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/mousewheel.js"></script>
+<script src="js/jscrollpane.js"></script>
+<script src="js/coupons.js"></script>
+<script type="text/javascript" src="js/personal-moving-1w.js"></script>
+
+
+</body>
+
+</html>
