@@ -29,7 +29,7 @@
 //                "end": dataTo.getTime() // Milliseconds
 //            }
 //        ],
-        view: 'month',
+        view: 'week',
         tmpl_path: 'tmpls/',
         tmpl_cache: false,
         day: 'now',
