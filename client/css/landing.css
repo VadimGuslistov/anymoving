@@ -1,0 +1,75 @@
+header {
+  background-image: url(../img/background.jpg);
+}
+section h3.section-subheading {
+  font-size: 25px;
+}
+  .plan-header {
+    width: 100%;
+    background-color: #222;
+        padding-bottom: 15px;
+        margin-top: 64px;
+  }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.plan-date {
+  color: white;
+}
+
+.plan-li {
+  margin-top: 40px;
+}
+
+.btn {
+  font-size: 30px;
+}
+
+.btn-circle {
+width: 70px;
+height: 70px;
+margin-top: 15px;
+padding: 7px 16px;
+border: 2px solid #fff;
+border-radius: 35px;
+font-size: 40px;
+color: #fff;
+background: 0 0;
+}
+.diy {
+    display: block;
+  padding-bottom: 20px  ;
+    width: 41%;
+  height: 174px;
+}
+.plan-dsc {
+  text-align: left;
+}
+.timeline-panel >.plan-row  {
+  float: right;
+}
+li.timeline-inverted>.diy {
+    float: left;
+    text-align: right;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+li.no-inverted>.diy {
+    float: right;
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 20px;
+}
+
+
+.navbar-default .navbar-brand {
+  font-family: Ubuntu,Arial,cursive;
+  font-weight: bold;
+}
+.any {
+  color: #ef6e20;
+}
+.moving {
+  color: white;
+}
