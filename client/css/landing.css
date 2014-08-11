@@ -92,7 +92,9 @@ li.no-inverted>.diy {
 
 
 .row {
-  mar
+  margin-right: 0px;
+  margin-left: 0px;
+  
 }
 
 @media(min-width:768px) {
