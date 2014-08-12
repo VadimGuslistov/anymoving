@@ -107,7 +107,9 @@ li.no-inverted>.diy {
 }
 
 @media(min-width:768px) {
-  }
+  header .intro-text {
+  padding-top: 150px;
+}}
 .navbar {
   border: 1px solid transparent;
 }

@@ -16,5 +16,6 @@
 	 			setTimeout(arguments.callee, 10);
 	 		}
 	 	}, 10);
+ 	obj.style.onclick="";
  }
  /*]]>*/
