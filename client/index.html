@@ -101,25 +101,21 @@
                                 <div class="row">
                                     <div class="col-md-4 col-centered">
                                         <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-user"></span>
-                                                </span>
+                                            
+                                                
                                                 <input type="text" class="form-control" placeholder="Ваше имя">
-                                            </div>
+                                            
                                         </div>
                                         <div class="form-group">
-                                            <div class="input-group">
+                                            
                                             <input type="text" class="form-control " placeholder="Адрес вашей электропочты">
-                                        </div>
+                                    
                                         </div>
                                         <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-earphone"></span>
-                                                </span>
-                                                <input type="text" class="form-control" placeholder="Ваш телефонный номер">
-                                            </div>
+                                            
+                                              <input type="text" id="phone" class="form-control" placeholder="Ваш телефонный номер">  
+                                                
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-5 col-centered">
@@ -195,7 +191,7 @@
         <div class="row">
             <div class="col-lg-12 text-center ">
                 <h2 class="section-heading ">План вашего успешного переезда</h2>
-                <h3 class="section-subheading text-muted">Да прибудет с вами рыба-капля</h3>
+                <h3 class=" text-muted plan-underheader">Да прибудет с вами рыба-капля</h3>
             </div>
         </div>
         <div class="col-lg-12 text-center plan-header " id="2-month">
@@ -1244,8 +1240,13 @@
     <script src="js/smooth-scroll.js"></script>
 
     <script src="js/dropdown.js"></script>
+    <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
 
-
+<script type="text/javascript">
+                                                    jQuery(function($){
+                                                       $("#phone").mask("+7 (999) 999-9999");
+                                                    });
+                                                </script>
      
 </body>
 

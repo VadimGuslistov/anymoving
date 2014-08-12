@@ -9,6 +9,7 @@ section h3.section-subheading {
     background-color: #222;
         padding-bottom: 15px;
         margin-top: 64px;
+        
   }
 .container {
   margin-left: auto;
@@ -16,6 +17,7 @@ section h3.section-subheading {
 }
 .plan-date {
   color: white;
+  padding-top: 20px;
 }
 
 .plan-li {
@@ -87,7 +89,14 @@ li.no-inverted>.diy {
   margin-bottom: }
 
 
-
+.plan-underheader {
+  margin-bottom: 11px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+}
 
 
 
@@ -99,3 +108,9 @@ li.no-inverted>.diy {
 
 @media(min-width:768px) {
   }
+.navbar {
+  border: 1px solid transparent;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+}
