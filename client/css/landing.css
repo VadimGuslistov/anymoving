@@ -10,6 +10,7 @@ section h3.section-subheading {
         padding-bottom: 15px;
         margin-top: 64px;
         
+        
   }
 .container {
   margin-left: auto;
@@ -26,13 +27,14 @@ section h3.section-subheading {
 
 .btn {
   font-size: 30px;
+  margin-bottom: 0;
 }
 
 .btn-circle {
 width: 70px;
 height: 70px;
 margin-top: 15px;
-padding: 7px 16px;
+padding: 2px 16px;
 border: 2px solid #fff;
 border-radius: 35px;
 font-size: 40px;
@@ -106,13 +108,51 @@ li.no-inverted>.diy {
   
 }
 
-@media(min-width:768px) {
-  header .intro-text {
-  padding-top: 150px;
-}}
 .navbar {
   border: 1px solid transparent;
 }
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 20px;
+}
+
+.top-plan {
+  margin-top: 40px;
+}
+
+.bottom-button {
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+}
+
+#plan {
+  background-color: #f7f7f7;
+  padding-bottom: 75зч;
+}
+
+.last-li {
+  margin-bottom: 64px;
+}
+@media(min-width:768px) {
+  section {
+  }
+
+.timeline>li {
+  margin-bottom: 85px;
+}
+header .intro-text {
+  padding-top: 150px;
+}}
+section {
+}
+footer {
+  padding: 25px 0;
+}
+
+.fa-angle-double-up {
+  padding-bottom: 0px;
+}
+
+.spacer {
+  margin-top: 64px;
 }
