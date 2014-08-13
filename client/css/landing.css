@@ -182,6 +182,7 @@ footer {
 @media (min-width: 992px) {
   .col-md-5 {
     width: 50.66666667%;
+    margin-top: 25px;
   }
 }
 .btn-group, .btn-group-vertical {
