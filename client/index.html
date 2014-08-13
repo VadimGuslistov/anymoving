@@ -99,7 +99,7 @@
                         <div class="col-lg-12">
                             <form name="sentMessage" id="contactForm" novalidate>
                                 <div class="row">
-                                    <div class="col-md-4 col-centered">
+                                    <!-- <div class="col-md-4 col-centered">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Ваше имя">
                                         </div>
@@ -109,9 +109,13 @@
                                         <div class="form-group">
                                             <input type="text" id="phone" class="form-control" placeholder="Ваш телефонный номер">
                                         </div>
-                                    </div>
+                                    </div> -->
+                                  
+                          
                                     <div class="col-md-5 col-centered">
-                                        <div class="section-subheading">Я планирую переехать через:</div>
+                                        <div class="register-in-top">Зарегистрируйтесь в одной из социальных сетей</div>
+                                        <div id="goodshare" themecolor="color" themestyle="round" socialnetworks="vkontakte,ok,facebook,twitter,googleplus,linkedin" iconsize="64" buttonfixed="none" viewcounter="false"></div>
+                                        <div class="register-in">Я планирую переехать через:</div>
                                         <div class="btn-group btn-group-sm date-buttons">
                                             <button type="button" class="btn btn-default btn-width">2 месяца или больше</button>
                                             <button type="button" class="btn btn-default btn-width">1 месяц</button>
@@ -959,7 +963,7 @@
         <div class="space" id="1-day"></div>
         <div class="col-lg-12 text-center plan-header">
             <h3 class="plan-date">В день переезда</h3>
-            <a href="#2-month" class="btn btn-circle page-scroll scroll">
+            <a href="#plan" class="btn btn-circle page-scroll scroll">
                  <i class="fa fa-angle-double-up animated"></i>
             </a>
         </div>
@@ -1203,11 +1207,18 @@
     <script src="js/dropdown.js"></script>
     <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-                                                    jQuery(function($){
-                                                       $("#phone").mask("+7 (999) 999-9999");
-                                                    });
-                                                </script>
+    <script type="text/javascript">
+        jQuery(function($){
+            $("#phone").mask("+7 (999) 999-9999");
+        });
+    </script>
+
+    <script type="text/javascript" charset="UTF-8" async="async" src="js/socialConnect.js">
+    </script>
+
+
+
+
      
 </body>
 
