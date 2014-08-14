@@ -1,0 +1,92 @@
+/*!
+ * Start Bootstrap - Half Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+    height: 100%;
+    
+}
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+    height: 100%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.first-half {
+   height: 50%;
+   background-image: url(data:image/jpeg;base64,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);
+   width: 100%;
+}
+.second-half {
+  height: 50%;
+  background-color: white;
+  width: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    height: 100%;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+
+@media screen and (min-width:768px) {
+    .carousel-caption {
+    right: 0%;
+    left: 0%;
+    padding-bottom: 0px;
+        
+    }
+    
+}
+* {
+    box-sizing: border-box;
+    
+}
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+    display: block;
+    
+}
+.carousel-inner>.active {
+    left: 0;
+    
+}
+.carousel-inner>.item {
+    position: relative;
+    
+}
+:before, :after {
+    box-sizing: border-box;
+    
+}
+.carousel-inner {
+    
+}

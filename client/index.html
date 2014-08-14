@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/landing.css" rel="stylesheet">
+    <link href="css/half-slider.css" rel="stylesheet">
     
 
     <!-- Custom Fonts -->
@@ -1106,7 +1107,7 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!--<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1118,7 +1119,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
+
+                            <!-- Project Details Go Here 
                             <h2>Рейтинг мест проживания</h2>
                             <p class="item-intro text-muted">Топ-5 лучших для проживания районов Москвы.</p>
                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -1166,7 +1168,106 @@
                 </div>
             </div>
         </div>
+    </div>-->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div id="myCarousel" class="modal-content carousel slide">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+
+        
+           
+            
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill"></div>
+                <div class="carousel-caption">
+                    <div class="first-half 1s1h">
+                    <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcR5AwUo3iw3JyoEX5dlJ-pdFp_0OKY57x5R-1wTRU8xLNCKubb_cQ" class="slide-image">
+                    <h2>Caption 1</h2>
+                    <a href="#myCarousel" class="col-left btn btn-circle page-scroll scroll" data-slide="prev" >
+                         <i class="fa fa-angle-double-left animated"></i>
+                    </a>
+                    <a href="#myCarousel" class="col-right btn btn-circle page-scroll scroll" data-slide="next" >
+                         <i class="fa fa-angle-double-right animated"></i>
+                    </a>
+                    </div>
+                    <div class="second-half 1s2h">
+                        
+                        <div class="col-lg-12">
+                            <h1>Half Slider by Start Bootstrap</h1>
+                            <p>Капотня
+                                Неблагополучная экологическая обстановка. "Визитной карточкой" Капотни является Московский нефтеперерабатывающий завод (МНПЗ). Это одно из самых неэкологичных производств в городе, которое пагубно влияет на окружающую среду. Район граничит с МКАД, сразу за которым дымят градирни "ТЭЦ-22" "Мосэнерго".
+                                Плохая транспортная доступность. Район расположен в 19 километрах от центра столицы и не имеет не только собственной станции метро, но и перспектив получить ее в ближайшие 7 лет. В результате, до станций "Люблино" и "Марьино" жителям Капотни приходится добираться на общественном или личном транспорте по загруженным дорогам, наравне с жителями подмосковных городов, которые едут на работу в Москву.
+                                Слабая социальная инфраструктура. Зато имеется исправительная колония, а за МНПЗ располагается рынок "Садовод", куда в свое время переехали многие арендаторы легендарного "Черкизона" со всеми вытекающими последствиями.
+                                Низкое качество жилья. Кирпичные и панельные дома 1950 – 1970-х годов постройки. Раньше в них по большей степени жили сотрудники завода, а теперь все чаще в соседях можно увидеть мигрантов.
+</p>
+                        
+
+                        <hr>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill"></div>
+                <div class="carousel-caption">
+                    <div class="first-half 2s1h">
+                        <h2>Caption 1</h2>
+                        <a href="#myCarousel" class="col-left btn btn-circle page-scroll scroll" data-slide="prev" >
+                         <i class="fa fa-angle-double-left animated"></i>
+                        </a>
+                        <a href="#myCarousel" class="col-right btn btn-circle page-scroll scroll" data-slide="next" >
+                             <i class="fa fa-angle-double-right animated"></i>
+                        </a>
+
+                    </div>
+                    <div class="second-half 2s2h">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+
+                <div class="fill"></div>
+                <div class="carousel-caption">
+                    <div class="first-half 3s1h">
+                        <h2>Caption 1</h2>
+                        <a href="#myCarousel" class="col-left btn btn-circle page-scroll scroll" data-slide="prev" >
+                         <i class="fa fa-angle-double-left animated"></i>
+                        </a>
+                        <a href="#myCarousel" class="col-right btn btn-circle page-scroll scroll" data-slide="next" >
+                             <i class="fa fa-angle-double-right animated"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="second-half 3s2h">
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
 
 
 
