@@ -123,13 +123,14 @@ top: 50%;
 
 .button-left {
     display: inline-block;
-    float: left;
-    margin-top: 115px;;
+    
+    margin-top: 115px;
+    margin-right: 600px;;;;
 }
 .button-right {
     display: inline-block;
     margin-top: 115px;
-    float: right;
+    
 }
 
 .portfolio-modal {
@@ -137,5 +138,6 @@ top: 50%;
 }
 
 .buttons {
-    margin-top: 30p;;
+    margin-top: 30p;
+;
 }
