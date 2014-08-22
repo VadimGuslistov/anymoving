@@ -125,11 +125,12 @@ top: 50%;
     display: inline-block;
     
     margin-top: 115px;
-    margin-right: 600px;;;;
+    margin-right: 300px;;;;
 }
 .button-right {
     display: inline-block;
     margin-top: 115px;
+    margin-left: 300px;
     
 }
 
